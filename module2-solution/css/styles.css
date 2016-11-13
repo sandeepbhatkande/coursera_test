@@ -1,0 +1,72 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+body h1 {
+	text-align: center;
+	font-size: 1.75em;
+}
+.first_sub, .second_sub, .third_sub {
+	width: 32.1%;
+	height: 200px;
+	margin-left: 1%;
+	margin-top: 10px;
+	float: left;
+	border: 1px solid black;
+}
+.section_title {
+	float: right;
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+	background-color: pink;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+}
+.first_sub {
+	background-color: #ffccdd;
+}
+.second_sub {
+	background-color: #f2f2f2;
+}
+.third_sub {
+	background-color: #ffff80;
+}
+.first_sub .section_title {
+	background-color: #66ccff;
+} 
+.second_sub .section_title {
+	background-color: #ff4d4d;
+} 
+.third_sub .section_title {
+	background-color: #99ff33;
+} 
+.section_content {
+	margin-top: 50px;
+	padding: 10px;
+}
+@media (min-width: 992px) {
+	.first_sub, .second_sub, .third_sub {
+		width: 32.1%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.first_sub, .second_sub {
+		width: 48.5%
+	}
+	.third_sub {
+		clear: both;
+		width: 98%;
+	}
+}
+@media (max-width: 767px) {
+	.first_sub, .second_sub, .third_sub {
+		clear: both;
+		width: 99%;
+	}
+}
